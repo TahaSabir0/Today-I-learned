@@ -52,7 +52,6 @@ function App() {
         .order("votesInteresting", { ascending: false });
       if (!error) setFacts(facts);
       else alert("There was a problem getting data");
-      setFacts(facts);
       setIsLoading(false);
     }
     getFacts();
