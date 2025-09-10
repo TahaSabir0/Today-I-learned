@@ -130,6 +130,10 @@ h1 {
   background-color: oklch(26.8% 0.007 34.298);
 }
 
+.vote-buttons button:disabled {
+  background-color: #44403c;
+}
+
 ul {
   list-style: none;
 }
@@ -233,5 +237,30 @@ ul {
   .fact-form input,
   .fact-form select {
     width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fact-form {
+    padding: 16px;
+  }
+
+  .fact {
+    padding: 12px 16px;
   }
 }
