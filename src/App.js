@@ -44,7 +44,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const [currentCategory, setCurrentCategory] = useState("all");
-  // hello
   useEffect(
     function () {
       async function getFacts() {
